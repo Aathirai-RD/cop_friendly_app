@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cop friendly App</title>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+</head>
+<script type="text/javascript">
+function loginCheck(){
+	console.log("inside login check");
+	name=document.getElementById("uname").value;
+	password = document.getElementById("upass").value;
+	console.log( name );
+	console.log( password);
+	if(!(name.equals("admin") || password.equals("admin")))
+		{
+			alert("Incorrect credentials...")
+		}
+}
+</script>
+ <body style="background-color:deepskyblue	;">
+
+	<img src="bluebanner.jpg" width=100%>
+     
+	<body class=body1>
+  <div class="main">
+    <p class="title" align="center">Cop Friendly App</p>
+    <form action="loginservlet" class="form1" onsubmit="logincheck()">
+      <input class="user" type="text"  placeholder="Username" name="uname" required/>
+      <input class="pass" type="password"  placeholder="Password" name="upass" required/>
+      <input type="submit" class="submit" value="LOGIN">
+           
+      </form>      
+                
+    </div>
+     
+</body>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cop friendly App</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+table, td, tr {
+	border: 1px solid #ffffff;
+	margin:auto;	
+	border-collapse: collapse;
+}
+
+
+td:nth-child(even)
+ { text-align: left;}
+</style>
+</head>
+<body class=body2>
+	<img src="bluebanner.jpg" class="img-fluid" alt="Cop" width=100%>
+
+	<form class="form2" action="dbservlet">
+		<table>
+			<tr>
+				<td>name</td>
+				<td><input type="text" class="violatedname" width="200px"
+					name="fname" required /></td>
+			</tr>
+			<tr>
+				<td>phone</td>
+				<td><input type="text" id="phone" name="phone" required /></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td><input type="radio" id="male" name="gender" value="male">
+					<label for="male"> Male</label> <input type="radio" id="female"
+					name="gender" value="female"> <label for="female">Female</label>
+					<input type="radio" id="other" name="gender" value="other">
+					<label for="other"> Other</label></td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td><textarea rows="4" cols="30" name="address"></textarea></td>
+			</tr>
+			<tr>
+				<td>Vehicle Number:</td>
+				<td><input type="text" id="text" name="vehicle" required /></td>
+			</tr>
+			<tr>
+				<td>Date of Occurrence:</td>
+				<td><input type="datetime-local" id="date" name="date" required /></td>
+			</tr>
+			<tr>
+				<td><label for="offences">Offences:</label></td>
+				<td><select id="offences" name="offences" required>
+						<option value="General">General</option>
+						<option value="Violation of Road Rules	">Violation of
+							Road Rules</option>
+						<option value="Ticket less Travel ">Ticket less Travel</option>
+						<option
+							value="Disobeying orders from the Authorities and Refusing to Share Information">Disobeying
+							orders from the Authorities and Refusing to Share Information</option>
+						<option value="Racing and Speeding	">Racing and Speeding</option>
+						<option value="Ticket less Travel">Ticket less Travel</option>
+						<option value="Driving Without License	">Driving Without
+							License</option>
+						<option value="Dangerous / Rash Driving">Dangerous / Rash
+							Driving</option>
+						<option value="Accident Related Offences">Accident
+							Related Offences</option>
+						<option value="Driving Uninsured Vehicle">Driving
+							Uninsured Vehicle</option>
+						<option value="Vehicle Without Permit	">Vehicle Without
+							Permit</option>
+						<option value="Not Wearing Seatbelt">Not Wearing Seatbelt</option>
+						<option value="Not Wearing Helmet	">Not Wearing Helmet</option>
+						<option value="Overloading of Passengers">Overloading of
+							Passengers</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Fine amount: &#8377;</td>
+				<td><input type="text" id="fineamount" name="fineamount"
+					required /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Register" /></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
